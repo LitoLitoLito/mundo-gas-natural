@@ -1,0 +1,73 @@
+.cabezal {
+  background-color: #123b46;
+  color: white;
+  padding: 20px;
+}
+
+
+.contenedor-cabezal {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.icono-gas {
+  font-size: 38px;
+  color: #67e8f9;
+}
+
+.marca h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.marca p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #c8e8e9;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #67e8f9;
+}
+
+@media (max-width: 600px) {
+  .contenedor-cabezal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .marca h1 {
+    font-size: 21px;
+  }
+}

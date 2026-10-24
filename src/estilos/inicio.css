@@ -1,0 +1,140 @@
+.pagina-inicio {
+  width: 100%;
+}
+
+.presentacion {
+  background: linear-gradient(135deg, #e0f2f1, #f4f7f8);
+  padding: 55px 25px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+}
+
+.etiqueta {
+  color: #087e8b;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.presentacion h2 {
+  color: #123b46;
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 15px 0;
+}
+
+.presentacion > p:last-child {
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.seccion-articulos > h2 {
+  color: #123b46;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.rejilla-articulos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.tarjeta-articulo {
+  background-color: white;
+  border: 1px solid #dce5e8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px #123b4610;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-articulo,
+.imagen-alternativa {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.imagen-alternativa {
+  background: linear-gradient(135deg, #d6eeee, #b6d9df);
+  color: #123b46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.contenido-tarjeta {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contenido-tarjeta h3 {
+  color: #123b46;
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.contenido-tarjeta p {
+  color: #52656b;
+  font-size: 15px;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.contenido-tarjeta a {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #087e8b;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contenido-tarjeta a:hover {
+  background-color: #075965;
+}
+
+.mensaje {
+  padding: 15px;
+  background-color: #e0f2f1;
+  border-radius: 8px;
+}
+
+.error {
+  color: #a32626;
+  background-color: #fdeaea;
+}
+
+.fuente-articulos {
+  color: #667980;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+@media (max-width: 900px) {
+  .rejilla-articulos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .presentacion {
+    padding: 30px 20px;
+  }
+
+  .rejilla-articulos {
+    grid-template-columns: 1fr;
+  }
+
+  .imagen-articulo,
+  .imagen-alternativa {
+    height: 230px;
+  }
+}

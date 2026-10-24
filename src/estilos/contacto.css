@@ -1,0 +1,164 @@
+.pagina-contacto {
+  width: 100%;
+}
+
+.encabezado-contacto {
+  padding: 35px 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e0f2f1, #f4f7f8);
+}
+
+.etiqueta-contacto {
+  color: #087e8b;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.encabezado-contacto h2 {
+  color: #123b46;
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 12px 0;
+}
+
+.encabezado-contacto > p:last-child {
+  color: #52656b;
+  line-height: 1.7;
+}
+
+.contenido-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+.formulario-contenedor,
+.mapa-contenedor {
+  padding: 25px;
+  background: white;
+  border: 1px solid #dce5e8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #123b4610;
+  min-width: 0;
+}
+
+.formulario-contenedor h3,
+.mapa-contenedor h3 {
+  color: #123b46;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-contacto label {
+  color: #29464e;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd8dc;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #24343a;
+  font-size: 15px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: 2px solid #087e8b;
+  outline-offset: 1px;
+}
+
+.formulario-contacto textarea {
+  resize: vertical;
+}
+
+.formulario-contacto button {
+  margin-top: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #087e8b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background: #075965;
+}
+
+.formulario-contacto button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.estado-mensaje {
+  padding: 12px;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.estado-mensaje.exito {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.estado-mensaje.error {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.mapa-contenedor > p {
+  color: #52656b;
+  line-height: 1.6;
+}
+
+.mapa-contenedor iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.mapa-contenedor > a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #087e8b;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .contenido-contacto {
+    grid-template-columns: 1fr;
+  }
+
+  .mapa-contenedor iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .encabezado-contacto {
+    padding: 25px 20px;
+  }
+
+  .formulario-contenedor,
+  .mapa-contenedor {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,23 @@
+.aplicacion {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-principal {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.contenido-principal h2 {
+  color: #123b46;
+  font-size: 30px;
+}
+
+.contenido-principal p {
+  font-size: 17px;
+  line-height: 1.6;
+}
